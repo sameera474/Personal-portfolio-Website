@@ -91,3 +91,16 @@
     background-color: rgba(10, 131, 244, 0.4);
 }
 
+/* media queries */
+
+@media (max-width: 1300px){
+    .nav-container{
+        flex-direction: column;
+        padding: 25px 0;
+        row-gap: 18px;
+    }
+    .nav-list{
+        column-gap: 20px;
+    }
+
+}
