@@ -129,7 +129,7 @@ section {
 }
 
 /* Home Section  */
-.header-container {
+.section_container {
     display: grid;
     grid-auto-flow: column;
     /* gplate-columns: auto 70px auto;
@@ -137,9 +137,9 @@ section {
     justify-content: center;
     /* justify-items: center; */
     align-items:center;
-    padding: auto;
     gap: 20px;
-    box-shadow:0px 1px 5px rgba(20, 24, 26, 0.473);
+    padding-bottom: 40px;
+    color: white;
      
 }
 
@@ -258,12 +258,9 @@ section {
 
 /* About me */
 
-.about-me{
-    
-    box-shadow:0px 1px 5px rgba(20, 24, 26, 0.473);
-}
 
-.about-container{
+
+/* .about-container{
     display: grid;
     grid-auto-flow: column;
     align-items: center;
@@ -273,7 +270,7 @@ section {
     padding: auto;
     color: white;
 
-}
+} */
 
 .head-title{
     text-align: center;
@@ -286,7 +283,7 @@ section {
     color: white;
 }
 
-.about-box{
+.box-effect{
     /* border: 2px solid rgba(255, 255, 255, 0.199); */
     background-color: rgba(7, 1, 24, 0.274);
     border-radius: 50px;
@@ -297,19 +294,19 @@ section {
 
 }
 .about-img{
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
 }
 
 .about-right{
     display: flex;
     align-items: top-align;
-    justify-content: center;
+    /* justify-content: center; */
     gap: 30px;
 }
 
 .about-right ul{
-    text-align: left;
+    text-align: center;
     font-size: 20px;
     font-weight: 100;
     letter-spacing: 2px;
@@ -317,12 +314,16 @@ section {
     display: inline;
 }
 
-.stars li{
-    margin: -2.5px 0;
-    color: rgba(254, 4, 179, 1);
+.about-right p{
+    text-align: center;
 }
-.about-right h2{
+
+.box-effect h2{
     margin-bottom: 20px;
+    font-size: 30px;
+}
+.box-effect li{
+    font-size: 20px;
 }
 
 .my-skills{
@@ -335,6 +336,28 @@ section {
     padding: auto;
     color: white;
 }
+
+/* Experience section */
+
+
+.box-effect h2{
+    text-align: center;
+}
+
+.box-inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.stars li{
+    margin: -2.5px 0;
+    color: rgba(254, 4, 179, 1);
+}
+
+
+
 .btn:hover {
     /* background-color: rgba(10, 131, 244, 0);
     box-shadow: 0px 2px 5px rgb(20, 192, 249);
