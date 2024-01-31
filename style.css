@@ -316,3 +316,68 @@ section {
 }
 
 /* Media queries for phone versions */
+
+@media only screen and (max-width: 480px) {
+    .nav-container {
+        padding: 15px 0;
+        max-width: flex-direction;
+        height: fit-content;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .nav-link {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    section{
+        padding-top: 300px;
+    }
+
+    .header-container{
+        display: grid;
+        grid-auto-flow: row;
+        justify-content: center;
+        /* justify-items: center; */
+        align-items:center;
+        padding: auto;
+        gap: 50px;
+        margin: 0;
+    }
+
+    .header-left{
+        text-align:center; 
+        margin: auto;
+    }
+    .header-text{
+        text-align: center;
+    }
+    .title{
+        font-size: 20px;
+        text-align: center;
+    }
+    .my-last-name{
+        text-align: center;
+    }
+    .my-first-name{
+        text-align: center;
+    }
+    .header-social{
+        justify-content: center;
+    }
+
+    .header-middle{
+        margin: auto;
+    }
+    .header-right{
+        margin: auto;
+    }
+}
