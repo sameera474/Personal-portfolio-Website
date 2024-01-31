@@ -24,7 +24,7 @@
     letter-spacing: 1px;
 }
 
-  header {
+header {
     padding: 20px 10px;
     top: 0;
     left: 0;
@@ -35,7 +35,7 @@
     z-index: 1;  
 }
 
-body{
+body {
     background-image: url(images/background-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -90,8 +90,10 @@ body{
 .nav-link:hover, 
 .nav-link:focus{
     color: rgba(255, 255, 255, 1);
-    border: 0.1px solid rgba(233, 119, 199, 0.5);
-    box-shadow: 1px 0px 5px rgb(167, 2, 185);
+    text-decoration: overline  rgb(167, 2, 185);
+
+    /* border: 0.1px solid rgba(233, 119, 199, 0.5); */
+    /* box-shadow: 1px 0px 5px rgb(167, 2, 185); */
     padding: 8% 6%;
     font-size: 180%;
     font-weight: 700;
@@ -117,17 +119,16 @@ body{
 
 /* Select area  */
 
-/* About me Section  */
 
-section{
+
+section {
     position: relative;
     padding-top: 150px;
-    /* position: fixed; */
-    width: 100%;
-    
+    margin: auto;
 }
 
-.about-container {
+/* Home Section  */
+.header-container {
     display: grid;
     grid-auto-flow: column;
     /* gplate-columns: auto 70px auto;
@@ -139,15 +140,18 @@ section{
     gap: 20px;
     text-shadow: 0px 2px 2px rgb(20, 24, 26);
     box-shadow:0px 1px 5px rgba(20, 24, 26, 0.473);
+     
 }
 
-.about-left{
+.header-left{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 10px;
     justify-content: space-between;
     color: white;
     text-align: right;
+    resize: both;
+    /* margin: auto; */
     
     /* border : 1px solid; */
     
@@ -161,7 +165,6 @@ section{
     
     /* margin-bottom: 0 ;
     padding-bottom: 0; */
-    
 }
 
 /* .name{
@@ -181,11 +184,11 @@ section{
 
 .my-last-name {
     font-size: 45px;
-    margin-top: -0.5em;
+    margin-top:-0.5em;
+    
 }
 
-.about-text{
-
+.header-text{
     position: relative;
     font-size: 15px;
     font-weight: 100;
@@ -193,52 +196,58 @@ section{
     margin-top: -2em;
     /* padding: 5px 0px; */
     text-align: right;
+    
 }
 
 .header-social{
     display: flex;
     align-items: center;
     justify-content: right;
-    gap: 20px;
-    
+    gap: 20px; 
 }
 
 .icon-social{
     width: 35px;
     fill: white;
     transition: all 0.4s;
+    margin: auto;
     
 }
-/* .about-middle{
+/* .header-middle{
     align-items: center,
     justify-content: center;
     padding: 40%;
 } */
 
-.about-middle{
+.header-middle{
     font-size: 80px;
     text-align: center;
     justify-content: center;
     /* border : 1px solid white */
+    /* margin: auto; */
 }
 
 
 .btn-cv{
     position: relative;
     color: white;
-    margin: 0 auto;
+    margin: 0;
     background-color: rgba(254, 4, 179, 1);
     border: 0.1px solid rgba(255, 255, 255, 0);
     
     border-radius: 50%;
-    padding:11% 5%;
+    padding:11px 5px;
     font-weight: 100;
     letter-spacing: 2px;
     cursor: pointer;
     transition: all 0.4s;
 }
 
-.about-img{
+/* .header-right{
+    /* margin: auto; 
+}*/
+
+.header-img{
     width: 500px;
     height: 500px;
 }
@@ -247,6 +256,33 @@ section{
     scale: 150%;    
 }
 
+/* About me */
+
+.about-container{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    padding: auto;
+}
+
+.about-image{
+    width: 500px;
+    height: 500px;
+}
+
+.about-right{
+    display: flex;
+    align-items: top-align;
+    justify-content: center;
+    gap: 10px;
+}
+
+.about-right ol{
+    text-align: left;
+}
 
 .btn:hover {
     /* background-color: rgba(10, 131, 244, 0);
@@ -278,3 +314,5 @@ section{
 
     }
 }
+
+/* Media queries for phone versions */
