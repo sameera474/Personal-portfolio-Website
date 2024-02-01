@@ -22,7 +22,7 @@
     outline: none;
     font-family: sen;
     letter-spacing: 1px;
-    text-shadow: 0px 2px 2px rgb(20, 24, 26);
+    text-shadow: 0px 1px 1px rgb(20, 24, 26);
 }
 
 header {
@@ -140,6 +140,7 @@ section {
     gap: 20px;
     padding-bottom: 40px;
     color: white;
+    margin-top: 80px;
      
 }
 
@@ -377,12 +378,15 @@ height: 50px;
 
 .box-effect h2{
     text-align: center;
+    margin: 40px;
+
 }
 
 .box-inner{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 40px 40px;
     gap: 20px;
 }
 
@@ -394,8 +398,10 @@ height: 50px;
 /* Projects section */
 
 .scroll-container {
-    width: 60%; 
+    width: 50%; 
     overflow-x: scroll;
+    scrollbar-color:rgba(254, 4, 179, 1) #02013b56;
+    scrollbar-width: reinitialvert;
     margin: 0 auto;
     justify-content: center;
     align-content: center;
@@ -406,7 +412,8 @@ height: 50px;
 .scroll-content {
     white-space: nowrap;
     display: flex;
-    gap: 30px;
+    gap: 45px;
+    
 }
 .project-img{
     width: 200px;
@@ -417,7 +424,7 @@ height: 50px;
     border-radius: 50%;
        
 }
-.btn-structure{
+.btn-inproject{
     display: grid;
     grid-auto-flow: column;
     align-items: center;
@@ -428,6 +435,67 @@ height: 50px;
 .smallbtn{
     color: white;
 }
+
+/* contact me section */
+
+.contact-me-container{
+    margin-top: 80px;
+    display: grid;
+    grid-auto-flow: raw;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: left;
+    padding: auto;
+    color: white;   
+}
+
+.input{
+
+    background-color: rgba(1, 1, 59, 0.377);
+    border-radius: 1em;
+    font-size: 1.25rem;
+    color: rgba(254, 4, 179, 1);
+    padding: 0.5em;
+    margin: 0.5em;
+    border-color:linear-gradient(rgb(190, 4, 181), rgba(255, 255, 255,blue));
+    border: 2px solid transparent;
+    width: 100%;
+    /* color: #fff;
+    font-size: 1.25rem;
+    line-height: 1;
+    border-style: none;
+    outline: none;
+    height: calc(1em + 1.6em + 0.5em);
+    width: 100%;
+    padding: 0.8em 1em;
+    border: 0.25em solid transparent;
+    background-image: linear-gradient(#000, #000), linear-gradient(120deg, #f09 0%, #0ff 50%, #9f0 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border-radius: 1em;
+    background-size: 200% 100%; */
+      
+  }
+
+  .customer-message {
+    width: 300px;
+    height: 150px;
+  }
+
+/* Footer Section */
+
+footer {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: auto;
+    color: white;
+    font-size: 20px;
+}
+
+
+
 .smallbtn:hover{
     align-items: center;
     justify-content: center;
@@ -437,7 +505,7 @@ height: 50px;
     background-color: rgb(84, 201, 221);
     box-shadow: 1px 0px 5px rgb(4, 178, 221);
     transition: all 0.4s;
-    font-size: 150%;
+    font-size: 120%;
     font-weight: 100;
 
 }
@@ -479,7 +547,7 @@ height: 50px;
 @media only screen and (max-width: 480px) {
     .nav-container {
         padding: 15px 0;
-        max-width: flex-direction;
+        max-width: 100%; /* Corrected value */
         height: fit-content;
     }
 
@@ -497,46 +565,32 @@ height: 50px;
         padding: 10px;
     }
 
-    section{
-        padding-top: 300px;
+    section {
+        padding-top: 20px; /* Adjusted value */
     }
 
-    .header-container{
+    .header-container {
         display: grid;
-        grid-auto-flow: row;
         justify-content: center;
-        /* justify-items: center; */
-        align-items:center;
-        padding: auto;
+        align-items: center;
+        padding: 0 20px; /* Adjusted value */
         gap: 50px;
         margin: 0;
     }
 
-    .header-left{
-        text-align:center; 
-        margin: auto;
-    }
-    .header-text{
-        text-align: center;
-    }
-    .title{
-        font-size: 20px;
-        text-align: center;
-    }
-    .my-last-name{
-        text-align: center;
-    }
-    .my-first-name{
-        text-align: center;
-    }
-    .btn-structure{
-        justify-content: center;
+    .header-left,
+    .header-middle,
+    .header-right {
+        text-align: center; /* Center alignment */
     }
 
-    .header-middle{
-        margin: auto;
+    .title {
+        font-size: 1.5em; /* Using relative units */
+        text-align: center;
     }
-    .header-right{
-        margin: auto;
+
+    .btn-structure {
+        display: flex; /* Added to override grid layout */
+        justify-content: center;
     }
 }
