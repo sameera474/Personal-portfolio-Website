@@ -199,7 +199,7 @@ section {
     
 }
 
-.header-social{
+.btn-structure{
     display: flex;
     align-items: center;
     justify-content: right;
@@ -391,6 +391,56 @@ height: 50px;
     color: rgba(254, 4, 179, 1);
 }
 
+/* Projects section */
+
+.scroll-container {
+    width: 60%; 
+    overflow-x: scroll;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    padding: 30px 30px;
+
+}
+
+.scroll-content {
+    white-space: nowrap;
+    display: flex;
+    gap: 30px;
+}
+.project-img{
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    border-radius: 50%;
+       
+}
+.btn-structure{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.smallbtn{
+    color: white;
+}
+.smallbtn:hover{
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgb(84, 201, 221);
+    box-shadow: 1px 0px 5px rgb(4, 178, 221);
+    transition: all 0.4s;
+    font-size: 150%;
+    font-weight: 100;
+
+}
 
 
 .btn:hover {
@@ -479,7 +529,7 @@ height: 50px;
     .my-first-name{
         text-align: center;
     }
-    .header-social{
+    .btn-structure{
         justify-content: center;
     }
 
