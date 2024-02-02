@@ -4,16 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal portfulio Website</title>
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+
 </head>
 <body>
 <!-- Header initialising -->
     <header>
             <div class="container nav-container">
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
                 <a class="logo" href="">SAMEERA</a>
 
                 <!-- navbar initialising -->
-                <nav class="nav">
+                <nav>
 
                     <ul class="nav-list">
                         <li class="nav-item">
@@ -56,7 +64,7 @@
                 <h1 class="name my-first-name"> Sameera </h1>
                 <h1 class="name my-last-name"> Wagaarachchige </h1>
                 <div class="header-text">
-                    <p> I'm Full-stack web developer and <br> I located in Finland.</p>
+                    <p> I'm a <b>Full-stack web developer</b> based in Finland, <br> crafting digital solutions with <br> passion and precision.</p>
                 </div>
                 <div class="btn-structure">
                     <a href="https://www.linkedin.com/in/sameera-chaturanga-wagaarachchige/">
@@ -68,7 +76,7 @@
                 </div>
             </div>
             <div class="header-middle">
-                <a href="#" class="btn btn-cv"> CV </a>
+                <a href="CV/cv.pdf" download="cv.pdf" class="btn btn-cv"> CV </a>
             </div>
             <div class="header-right">
                 <img class="header-img" src="images/profile pic.png" alt="me">
