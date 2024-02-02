@@ -618,6 +618,16 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    .experience-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .scroll-content{
+        scale: 80%;
+    }
     
     .my-experience ul{
         display: flex;
