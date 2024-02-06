@@ -349,9 +349,20 @@ height: 50px;
 }
 
 /* Projects section */
+.project{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    padding: auto;
+    color: white;
+}
 
 .scroll-container {
-    width: 50%; 
+    width: 80%; 
+    height: 550px;
     overflow-x: scroll;
     scrollbar-color:rgba(254, 4, 179, 1) #02013b56;
     scrollbar-width: reinitialvert;
@@ -362,6 +373,7 @@ height: 50px;
 }
 
 .scroll-content {
+    margin-top: 5%;
     white-space: nowrap;
     display: flex;
     gap: 45px;
