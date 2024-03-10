@@ -402,12 +402,12 @@ section {
 }
 
 .project-img {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
-  border-radius: 50%;
+  border-radius: 20%;
 }
 
 .btn-inproject {
