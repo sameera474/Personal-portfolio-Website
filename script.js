@@ -1,7 +1,7 @@
-// Function to toggle the visibility of the navigation links
+// Toggle the visibility of the navigation links for mobile view
 function toggleMenu() {
-    var menuIcon = document.querySelector('.menu-icon');
-    var navList = document.querySelector('.nav-list');
-    menuIcon.classList.toggle('open'); 
-    navList.classList.toggle('open');
+  const menuIcon = document.querySelector(".menu-icon");
+  const navList = document.querySelector(".nav-list");
+  menuIcon.classList.toggle("open");
+  navList.classList.toggle("open");
 }

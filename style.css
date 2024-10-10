@@ -691,3 +691,75 @@ footer {
     gap: 70px;
   }
 }
+/* Ensure images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 768px) {
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgba(14, 13, 39, 0.9); /* Visible background for menu */
+    padding: 20px;
+  }
+
+  .nav-list.open {
+    display: flex;
+  }
+
+  /* Center align text for smaller screens */
+  .header-left,
+  .header-middle,
+  .header-right {
+    text-align: center;
+    margin: auto;
+  }
+
+  /* Adjusting font sizes for smaller screens */
+  .title {
+    font-size: 18px;
+  }
+
+  .my-first-name {
+    font-size: 50px;
+  }
+
+  .my-last-name {
+    font-size: 30px;
+  }
+
+  .header-text p {
+    font-size: 14px;
+  }
+
+  .about-container,
+  .experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about-img,
+  .header-img {
+    width: 300px;
+    height: auto;
+  }
+
+  .box-effect {
+    max-width: 90%; /* Making the boxes fit smaller screens */
+  }
+
+  /* Scrollable project section */
+  .scroll-container {
+    width: 100%;
+  }
+
+  .project-img {
+    width: 100px;
+    height: 100px;
+  }
+}
