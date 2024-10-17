@@ -421,8 +421,8 @@ section {
 }
 
 .project-img {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: inherit;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
