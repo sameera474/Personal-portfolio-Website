@@ -20,14 +20,6 @@
   text-shadow: 0px 1px 1px rgb(20, 24, 26);
 }
 
-body {
-  background-image: url(images/background-1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
-}
-
 header {
   padding: 20px 10px;
   top: 0;
@@ -38,10 +30,19 @@ header {
   z-index: 1;
 }
 
+body {
+  background-image: url(images/background-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
 .nav-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  text-decoration: none;
   height: 80px;
   max-width: 80%;
   margin: 0 auto;
@@ -62,7 +63,9 @@ header {
   display: flex;
   align-items: center;
   gap: 60px;
+  width: 100%;
   margin: auto;
+  list-style: none;
   padding: 0;
 }
 
@@ -119,12 +122,14 @@ section {
   margin: auto;
 }
 
-/* Home Section */
+/* Home Section  */
+
 .section_container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
+  /* padding-top: 10px; */
   padding: 40px;
   color: white;
   margin: 10px;
@@ -261,6 +266,7 @@ section {
 .head-title {
   text-align: center;
   margin-top: 5%;
+  /* margin-bottom: 1%; */
   font-family: timmana;
   font-size: 50px;
   font-weight: 100;
@@ -283,7 +289,7 @@ section {
 .box-effect_inner {
   background-color: rgba(2, 4, 46, 0.195);
   border-radius: 20px;
-  border: 1px solid #41e6ff;
+  border: #41e6ff solid 1px solid;
   margin: auto;
   max-width: 300px;
   max-height: fit-content;
@@ -309,7 +315,8 @@ section {
   color: white;
 }
 
-/* About Section */
+/* About section */
+
 .about-img {
   width: 500px;
   height: 500px;
@@ -317,7 +324,7 @@ section {
 
 .about-right {
   display: flex;
-  align-items: flex-start;
+  align-items: top-align;
   gap: 30px;
 }
 
@@ -338,12 +345,28 @@ section {
   margin-bottom: 20px;
   font-size: 30px;
 }
-
 .box-effect li {
   font-size: 20px;
 }
 
-/* Experience Section */
+.horizontal-box-effect {
+  position: relative;
+  display: flex;
+  /* grid-auto-flow: column; */
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  padding: auto;
+  color: white;
+}
+.my-experience {
+  padding: 10px;
+  margin: 10px;
+}
+
+/* Experience section */
+
 .box-effect h2 {
   text-align: center;
   margin: 40px;
@@ -353,6 +376,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* padding: 40px 40px; */
   gap: 20px;
 }
 
@@ -360,13 +384,12 @@ section {
   margin: -2.5px 0;
   color: rgba(254, 4, 179, 1);
 }
-
 .certificate-img {
   width: 80%;
   height: 80%;
 }
+/* Projects section */
 
-/* Projects Section */
 .project {
   display: grid;
   grid-auto-flow: column;
@@ -387,6 +410,7 @@ section {
   margin: 0 auto;
   justify-content: center;
   align-content: center;
+  /* padding: 30px 30px; */
 }
 
 .scroll-content {
@@ -417,11 +441,12 @@ section {
   color: white;
 }
 
-/* Contact Section */
+/* contact me section */
+
 .contact-me-container {
   margin-top: 80px;
   display: grid;
-  grid-auto-flow: row;
+  grid-auto-flow: raw;
   align-items: center;
   justify-content: center;
   gap: 20px;
@@ -437,6 +462,7 @@ section {
   color: rgba(254, 4, 179, 1);
   padding: 0.5em;
   margin: 0.5em;
+  border-color: linear-gradient(rgb(190, 4, 181), rgba(255, 255, 255, blue));
   border: 2px solid transparent;
   width: 100%;
   box-shadow: 1px 0px 5px rgb(167, 2, 185);
@@ -454,6 +480,7 @@ section {
 }
 
 /* Footer Section */
+
 footer {
   margin-top: 50px;
   margin-bottom: 20px;
@@ -506,7 +533,8 @@ footer {
   scale: 110%;
 }
 
-/* Nav Bar */
+/* nav bar */
+
 .menu-icon {
   display: none;
   cursor: pointer;
@@ -521,6 +549,7 @@ footer {
 }
 
 /* Styling for the bars when the menu is open */
+
 .menu-icon.open .bar:nth-child(1) {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
@@ -533,7 +562,8 @@ footer {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/* Media Queries */
+/* media queries */
+
 @media only screen and (max-width: 1400px) {
   .menu-icon {
     display: block;
@@ -601,24 +631,19 @@ footer {
     text-align: center;
     margin: auto;
   }
-
   .header-text {
     text-align: center;
   }
-
   .title {
     font-size: 20px;
     text-align: center;
   }
-
   .my-last-name {
     text-align: center;
   }
-
   .my-first-name {
     text-align: center;
   }
-
   .btn-structure {
     justify-content: center;
   }
@@ -626,7 +651,6 @@ footer {
   .header-middle {
     margin: auto;
   }
-
   .header-right {
     margin: auto;
   }
@@ -635,7 +659,6 @@ footer {
     margin-top: 1%;
     margin-bottom: 1%;
   }
-
   .about-top {
     display: flex;
     flex-wrap: wrap;
@@ -664,10 +687,10 @@ footer {
     grid-auto-flow: row;
     justify-content: center;
     align-items: center;
+    justify-content: center;
     gap: 70px;
   }
 }
-
 /* Ensure images are responsive */
 img {
   max-width: 100%;
@@ -680,7 +703,7 @@ img {
     display: none;
     flex-direction: column;
     gap: 20px;
-    background-color: rgba(14, 13, 39, 0.9);
+    background-color: rgba(14, 13, 39, 0.9); /* Visible background for menu */
     padding: 20px;
   }
 
@@ -688,6 +711,7 @@ img {
     display: flex;
   }
 
+  /* Center align text for smaller screens */
   .header-left,
   .header-middle,
   .header-right {
@@ -695,6 +719,7 @@ img {
     margin: auto;
   }
 
+  /* Adjusting font sizes for smaller screens */
   .title {
     font-size: 18px;
   }
@@ -725,9 +750,10 @@ img {
   }
 
   .box-effect {
-    max-width: 90%;
+    max-width: 90%; /* Making the boxes fit smaller screens */
   }
 
+  /* Scrollable project section */
   .scroll-container {
     width: 100%;
   }
