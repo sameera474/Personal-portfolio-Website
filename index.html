@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
+    <title>Personal portfulio Website</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
+
+
 </head>
 
 <body>
-    <!-- Header -->
+    <!-- Header initialising -->
     <header>
         <div class="container nav-container">
             <div class="logo-threebars">
@@ -21,55 +23,68 @@
                     <div class="bar"></div>
                 </div>
             </div>
-            <!-- Navbar -->
+
+            <!-- navbar initialising -->
+
             <nav class="navigation">
+
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
-                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-                    <li class="nav-item"><a href="#contact" class="btn btn-contact">CONTACT</a></li>
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#experience" class="nav-link">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="btn btn-contact">CONTACT</a>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Home Section -->
+    <!-- Home initialising -->
     <section id="home">
         <div class="section_container header-container">
             <div class="header-left">
-                <p class="title">FULL-STACK WEB DEVELOPER</p>
-                <h1 class="name my-first-name">Sameera</h1>
-                <h1 class="name my-last-name">Wagaarachchige</h1>
+                <p class="title"> FULL-STACK WEB DEVELOPER</p>
+                <h1 class="name my-first-name"> Sameera </h1>
+                <h1 class="name my-last-name"> Wagaarachchige </h1>
                 <div class="header-text">
-                    <p>I'm a <b>Full-stack web developer</b> based in Finland, crafting digital solutions with passion
-                        and precision.</p>
+                    <p> I'm a <b>Full-stack web developer</b> based in Finland, <br> crafting digital solutions with
+                        <br> passion and precision.
+                    </p>
                 </div>
                 <div class="btn-structure">
                     <a href="https://www.linkedin.com/in/sameera-chaturanga-wagaarachchige/">
-                        <img class="icon-social" src="icons/linkedin.svg" alt="LinkedIn">
+                        <img class="icon-social" src="icons/linkedin.svg" alt="">
                     </a>
                     <a href="https://github.com/sameera474">
-                        <img class="icon-social" src="icons/github.svg" alt="GitHub">
+                        <img class="icon-social" src="icons/github.svg" alt="">
                     </a>
                 </div>
             </div>
             <div class="header-middle">
-                <a href="CV/CV Sameera FD.pdf" download="CV Sameera FD.pdf" class="btn btn-cv">CV</a>
+                <a href="CV/CV Sameera FD.pdf" download="CV Sameera FD.pdf" class="btn btn-cv"> CV </a>
             </div>
             <div class="header-right">
-                <img class="header-img" src="images/profile pic.png" alt="Profile Picture">
+                <img class="header-img" src="images/profile pic.png" alt="me">
             </div>
         </div>
     </section>
-
-    <!-- About Section -->
+    <!-- about section -->
     <section class="about-me" id="about">
         <h1 class="head-title">About Me</h1>
-        <div class="section_container about-container">
+        <d class="section_container about-container">
             <div class="about-top">
                 <div class="about-left">
-                    <img class="about-img" src="images/profile pic 2.gif" alt="Profile Picture">
+                    <img class="about-img" src="images/profile pic 2.gif" alt="me">
                 </div>
                 <div class="about-right">
                     <div class="box-effect_aboutMe">
@@ -77,20 +92,21 @@
                             <h2>Education</h2>
                             <ul>
                                 <div class="box-effect_inner">
-                                    <li id="year">2024</li>
-                                    <li>JAMK University of Applied Sciences Full-stack Development Masters.</li>
-                                    <li>AI Cloud Academy Full-stack Developer Bootcamp.</li>
-                                    <li>Python for Beginners E-Certificate University of Moratuwa.</li>
+                                    <li id="year">2024</li><br>
+                                    <li>JAMK University of Applied Sciences Full-stack Development Masters.</li><br>
+                                    <li>AI Cloud Acadamy Full-stack developer Bootcamp.</li><br>
+                                    <li>Python for Beginners E-Certificate University of Moratuwa.</li><br>
                                 </div>
                                 <div class="box-effect_inner">
-                                    <li id="year">2022</li>
-                                    <li>Master of Business Administration in University of Suffolk.</li>
+                                    <li id="year">2022</li><br>
+                                    <li>Master of Business Administration in University of Suffulk.</li><br>
                                 </div>
                                 <div class="box-effect_inner">
-                                    <li id="year">2015</li>
-                                    <li>Bachelors Degree in Materials Science and Engineering, University of Moratuwa.
+                                    <li id="year">2015</li><br>
+                                    <li>Bachelors Degree Materials Science and Engineering in University of Moratuwa.
                                     </li>
                                 </div>
+
                             </ul>
                         </div>
                     </div>
@@ -104,14 +120,14 @@
                             <li>years of <br> experience</li>
                             <li style="font-size: 60px;">+20</li>
                             <li>Projects <br> Completed</li>
-                            <li><img class="icon-about" src="icons/HTML.png" alt="HTML"></li>
-                            <li><img class="icon-about" src="icons/CSS.png" alt="CSS"></li>
-                            <li><img class="icon-about" src="icons/Js.png" alt="JavaScript"></li>
-                            <li><img class="icon-about" src="icons/React.png" alt="React"></li>
-                            <li><img class="icon-about" src="icons/node-js.png" alt="Node.js"></li>
-                            <li><img class="icon-about" src="icons/SCSS.png" alt="SCSS"></li>
-                            <li><img class="icon-about" src="icons/mongodb.svg" alt="MongoDB"></li>
-                            <li><img class="icon-about" src="icons/express-js.webp" alt="Express.js"></li>
+                            <li><img class="icon-about" src="icons/HTML.png" alt="html"></li>
+                            <li><img class="icon-about" src="icons/CSS.png" alt="css"></li>
+                            <li><img class="icon-about" src="icons/Js.png" alt="js"></li>
+                            <li><img class="icon-about" src="icons/React.png" alt="react"></li>
+                            <li><img class="icon-about" src="icons/node-js.png" alt="nodejs"></li>
+                            <li><img class="icon-about" src="icons/SCSS.png" alt="scss"></li>
+                            <li><img class="icon-about" src="icons/mongodb.svg" alt="mongodb"></li>
+                            <li><img class="icon-about" src="icons/express-js.webp" alt="expressjs"></li>
                         </ul>
                     </div>
                 </div>
@@ -122,41 +138,41 @@
                     <div class="scroll-container">
                         <div class="scroll-content">
                             <div class="box-effect">
-                                <h2>AI Cloud Academy Full-stack Developer Bootcamp</h2>
+                                <h2>AI Cloud Acadamy Full-stack developer Bootcamp</h2>
                                 <img class="certificate-img"
                                     src="images/Certificate of Completion - Full Stack Development.png"
-                                    alt="Certificate 1">
+                                    alt="certificate1"></img>
                                 <a href="Certificates/Certificate of Completion - Full Stack Development.pdf"
                                     download="Certificate of Completion - Full Stack Development.pdf"
-                                    class="smallbtn btn-github">Download</a>
+                                    class="smallbtn btn-github"> Download </a>
                             </div>
                             <div class="box-effect">
                                 <h2>Python Programme</h2>
-                                <img class="certificate-img" src="images/Python-1.png" alt="Certificate 2">
+                                <img class="certificate-img" src="images/Python-1.png" alt="certificate1"></img>
                                 <a href="Certificates/Python_for_Beginners_E-Certificate.pdf"
-                                    download="Python_for_Beginners_E-Certificate.pdf"
-                                    class="smallbtn btn-github">Download</a>
+                                    download="Python_for_Beginners_E-Certificate.pdf" class="smallbtn btn-github">
+                                    Download </a>
                             </div>
                             <div class="box-effect">
                                 <h2>Master of Business Administration</h2>
-                                <img class="certificate-img" src="images/MBA.png" alt="Certificate 3">
-                                <a href="Certificates/MBA.pdf" download="MBA.pdf"
-                                    class="smallbtn btn-github">Download</a>
+                                <img class="certificate-img" src="images/MBA.png" alt="certificate1"></img>
+                                <a href="Certificates/MBA.pdf" download="MBA.pdf" class="smallbtn btn-github"> Download
+                                </a>
                             </div>
                             <div class="box-effect">
                                 <h2>Bachelors Science and Engineering Degree</h2>
-                                <img class="certificate-img" src="images/UOM-Degree.png" alt="Certificate 4">
+                                <img class="certificate-img" src="images/UOM-Degree.png" alt="certificate1"></img>
                                 <a href="Certificates/UOM certi.pdf" download="UOM certi.pdf"
-                                    class="smallbtn btn-github">Download</a>
+                                    class="smallbtn btn-github"> Download </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+            </div>
     </section>
 
-    <!-- Experience Section -->
+    <!-- Experience Section initialization -->
     <section class="experience" id="experience">
         <h1 class="head-title">Experience</h1>
         <div class="section_container experience-container">
@@ -187,6 +203,7 @@
                             </ul>
                         </div>
                     </div>
+
                 </div>
             </div>
             <div class="experience-right">
@@ -205,6 +222,7 @@
                                 <li>Gitlab</li>
                             </ul>
                         </div>
+
                         <div class="stars">
                             <ul>
                                 <li>★★★★★</li>
@@ -218,13 +236,18 @@
                             </ul>
                         </div>
                     </div>
+
                 </div>
+
             </div>
+
         </div>
+
     </section>
 
 
-    <!-- Projects Section -->
+    <!-- Projects section initialization -->
+
     <section class="projects" id="projects">
         <h1 class="head-title">Projects</h1>
         <div class="section_container projects-container">
@@ -336,36 +359,50 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- contact Me initialization-->
+
     <section class="contact-me" id="contact">
         <h1 class="head-title">Contact Me</h1>
         <div class="contact-me-container">
             <div class="customer customer-fullname">
                 <h2>Name</h2>
-                <input type="text" class="input name" placeholder="Enter your name">
+                <label class="customer-fullname">
+                    <input type="text" class="input name" placeholder="Enter your name">
+                </label>
             </div>
             <div class="customer customer-email">
                 <h2>Email</h2>
-                <input type="text" class="input email" placeholder="Enter your email">
+                <label class="customer-email">
+                    <input type="text" class="input email" placeholder="Enter your email">
+                </label>
             </div>
             <div class="customer customer-phone">
                 <h2>Phone Number</h2>
-                <input type="text" class="input phone" placeholder="Enter your phone">
+                <label class="customer-phone">
+                    <input type="text" class="input phone" placeholder="Enter your phone">
+                </label>
             </div>
             <div class="customer customer-message">
                 <h2>Message</h2>
-                <textarea class="input message" placeholder="Enter your message"></textarea>
+                <label class="customer-message">
+                    <textarea class="input message" placeholder="Enter your message"></textarea>
+                </label>
             </div>
             <div class="customer customer-submit">
                 <button class="btn btn-submit">Submit</button>
             </div>
+
         </div>
+
     </section>
 
-    <!-- Footer -->
+
+
+    <!-- Footer Section  initialization-->
     <footer>
         <p>© Copyright Sameera Wagaarachchige || All Rights Reserved</p>
     </footer>
+
 </body>
 
 </html>
